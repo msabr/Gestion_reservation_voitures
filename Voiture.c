@@ -1,5 +1,4 @@
-#ifndef VOITURE_H_INCLUDED
-#define VOITURE_H_INCLUDED
+#include "Gestion_reservation_voitures.h"
 //♦Ce projet a ete cree et presente par: {☺♥ MOHAMED SABR ♥☺}
 
 /*Gestion des voitures :-----------------------------------------------------------------------*
@@ -14,19 +13,6 @@ La gestion des voitures permet d'effectuer des opérations telles que l'ajout, l
 *----------------------------------------------------------------------------------------------*/
 //****************************************************************************
 
-/*en declaré un type voiture  contient index, type, matricule, couleur,et prix*/
-typedef struct voiture{
-  char ve_type[20];
-  char ve_matricule[20];
-  char ve_couleur[20];
-   int ve_index;
-   int ve_prix;
-   int ve_duree;    //pour les fonctions de Reservation;
-   int ve_nbrjour;  //pour les fonctions de Reservation;
-   int ve_reservant;//pour les fonctions de Reservation;
-}voiture;
-FILE *ve;
-//****************************************************************************
 
 /*Pour ajouter une voiture dans la liste des voitures*/
 void ajouter_voiture(voiture *v,int *pborne,int taille){
@@ -64,7 +50,7 @@ void ajouter_voiture(voiture *v,int *pborne,int taille){
         scanf("%s",(v+i)->ve_matricule);
         printf("Donner le couleur de voiture %d: ",i+1);
         scanf("%s",(v+i)->ve_couleur);
-        printf("Donner le prix de voiture par jour: ",i+1);
+        printf("Donner le prix de voiture par jour:  %d",i+1);
         scanf("%d",&(v+i)->ve_prix);
         (*pborne)++;}
         printf("\n\n\t*************** Les voitures a ete ajoutee !!!***************\n");
@@ -215,4 +201,4 @@ void fichier_fscanf_voitures(voiture *v,int *pborne){
 
 //♦Ce projet a ete cree et presente par: {☺♥ MOHAMED SABR ♥☺}
 
-#endif // VOITURE_H_INCLUDED
+

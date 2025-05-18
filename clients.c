@@ -1,5 +1,4 @@
-#ifndef CLIENTS_H_INCLUDED
-#define CLIENTS_H_INCLUDED
+#include "Gestion_reservation_voitures.h"
 //♦Ce projet a ete cree et presente par: {☺♥ MOHAMED SABR ♥☺}
 
 /*Gestion des clients : -----------------------------------------------------------------------*
@@ -13,16 +12,6 @@ La fonctionnalité de gestion des clients permet d'ajouter, de modifier et de su
 *----------------------------------------------------------------------------------------------*/
 //****************************************************************************
 
-/*en declaré un type clients contient index, nom, prenom, adresse et numéro de téléphone */
-typedef struct clients{
-   int cl_index;
-   int cl_numerotete;
-   char cl_nom[20];
-   char cl_prenom[20];
-   char cl_adresse[100];
-}clients;
-FILE *cl;
-//****************************************************************************
 
 /*Pour ajouter un client dans la liste des clients*/
 void ajouter_client(clients *c,int *pborne,int taille){
@@ -202,6 +191,3 @@ void fichier_fscanf_clients(clients *c,int *pborne){
 //****************************************************************************
 
 //♦Ce projet a ete cree et presente par: {☺♥ MOHAMED SABR ♥☺}
-
-#endif // CLIENTS_H_INCLUDED
-
