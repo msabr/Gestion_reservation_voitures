@@ -5,10 +5,18 @@
 #include <stdio.h>
 #include <termios.h>
 #include <unistd.h>
-// #include <conio.h>
 #include <stdlib.h>
 #include <string.h>
-// #include <windows.h>
+// #include <conio.h> // Uncomment the above line if using conio.h for getch() on Windows
+// #include <windows.h> // Uncomment the above line if using Windows-specific functions on Windows
+
+
+# define RED "\033[31m"
+# define GREEN   "\033[32m"
+# define RESET "\033[0m"
+# define YELLOW  "\033[33m"
+# define CYAN    "\033[36m"
+# define MAGENTA "\033[35m"
 
 /*en declaré un type clients contient index, nom, prenom, adresse et numéro de téléphone */
 typedef struct clients{

@@ -90,7 +90,7 @@ void modifier_client(clients *c,int borne){
 
 /*Pour supprimer les information d'un client dans la liste des clients*/
 void supprimer_client(clients *c,int *pborne){
-     int i=0,j,k,l,index;
+     int i=0,j,k,index;
      printf("Donner l\'index de client a supprimer: ");
      scanf("%d",&index);
    for(j=0;j<(*pborne);j++){

@@ -27,7 +27,7 @@ int main(){
 //      HANDLE H=GetStdHandle(STD_OUTPUT_HANDLE);//Pour changer la couleur;
 start_principale:                            //Pour revenir à la liste principale;
 //     SetConsoleTextAttribute(H,12);           //Pour changer la couleur;
-    printf("\n\n\n{{{{{{{{{{{{{{{{{{{{{{{*Menu Principale*}}}}}}}}}}}}}}}}}}}}}}}\n\n");
+    printf(RED"\n\n\n{{{{{{{{{{{{{{{{{{{{{{{*Menu Principale*}}}}}}}}}}}}}}}}}}}}}}}\n\n");
     printf("\t\t 1- Gestion des Clients....................\n");
     printf("\t\t 2- Gestion des Voitures ..................\n");
     printf("\t\t 3- Gestion des Reservations...............\n");
@@ -40,7 +40,7 @@ switch(choix1){
 case 1:{
     start_clients://Pour revenir à la liste des clients;
 //       SetConsoleTextAttribute(H,11);//Pour changer la couleur;
-            printf("\n\n\n\t****************** Menu des Clients ******************\n\n");
+            printf(YELLOW"\n\n\n\t****************** Menu des Clients ******************\n\n");
             printf("\t\t 1- Ajouter un Client.                                      \n");
             printf("\t\t 2- Modifier un Client.                                     \n");
             printf("\t\t 3- Supprimer un Client.                                    \n");
@@ -71,7 +71,7 @@ case 1:{
 case 2:{
     start_voitures://Pour revenir à la liste des voitures;
        //  SetConsoleTextAttribute(H,10);//Pour changer la couleur;
-            printf("\n\n\n\t****************** Menu des Voitures ******************\n\n");
+            printf(GREEN"\n\n\n\t****************** Menu des Voitures ******************\n\n");
             printf("\t\t1- Ajouter une Voiture.                                      \n");
             printf("\t\t2- Modifier une Voiture.                                     \n");
             printf("\t\t3- Supprimer une Voiture.                                    \n");
@@ -102,7 +102,7 @@ case 2:{
 case 3:{
     start_Reservation://Pour revenir à la liste de Reservation;
        //  SetConsoleTextAttribute(H,14);//Pour changer la couleur;
-            printf("\n\n\n\t****************** Menu des Reservations ******************\n\n");
+            printf(CYAN"\n\n\n\t****************** Menu des Reservations ******************\n\n");
             printf("\t\t1- Reservation de voiture.                                   \n");
             printf("\t\t2- Rendre une Voiture.                                       \n");
             printf("\t\t3- Afficher la liste des voitures reservees.                 \n");
@@ -136,17 +136,17 @@ case 4:{
   opérations en cours sont enregistrées, les ressources sont libérées et le programme se ferme correctement.*/
 
        //   SetConsoleTextAttribute(H,14);//Pour changer la couleur;
-            printf("\n\n\n\t******************************Fin de Traitement !!!******************************\n\n");
+            printf(YELLOW"\n\n\n\t******************************Fin de Traitement !!!******************************\n\n");
        //   SetConsoleTextAttribute(H,11);//Pour changer la couleur;
-            printf("\tCe projet a ete cree et presente par:\n\n\n");
+            printf(GREEN"\tCe projet a ete cree et presente par:\n\n\n");
        //   SetConsoleTextAttribute(H,10);//Pour changer la couleur;
-            printf("\t\t MM     MM  OOOOOOOO  HH    HH  AAAAAAAA  MM     MM  EEEEEEE  DDDDDD   \n");
+            printf(RED"\t\t MM     MM  OOOOOOOO  HH    HH  AAAAAAAA  MM     MM  EEEEEEE  DDDDDD   \n");
             printf("\t\t MMM   MMM  OO    OO  HH    HH  AA    AA  MMM   MMM  EE       DD   DD  \n");
             printf("\t\t MMMM MMMM  OO    OO  HHHHHHHH  AAAAAAAA  MMMM MMMM  EEEEEEE  DD    DD \n");
             printf("\t\t MM MMM MM  OO    OO  HH    HH  AA    AA  MM MMM MM  EE       DD   DD  \n");
             printf("\t\t MM  M  MM  OOOOOOOO  HH    HH  AA    AA  MM  M  MM  EEEEEEE  DDDDDD \n\n");
        //   SetConsoleTextAttribute(H,12);//Pour changer la couleur;
-            printf("\t\t                   SSSSSSS  AAAAAAAA  BBBBBBB   RRRRRR             \n");
+            printf(MAGENTA"\t\t                   SSSSSSS  AAAAAAAA  BBBBBBB   RRRRRR             \n");
             printf("\t\t                   SS       AA    AA  BB    BB  RR   RR            \n");
             printf("\t\t                   SSSSSSS  AAAAAAAA  BBBBBBB   RRRRRR             \n");
             printf("\t\t                        SS  AA    AA  BB    BB  RR   RR            \n");
